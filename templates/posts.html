@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="posts-container">
+    <div class="posts-header">
+      <h2>📌 Postagens</h2>
+      <a href="{{ url_for('novo_post') }}" class="btn-novo">+ Novo Post</a>
+    </div>
+
+    {% if posts %}
+      {% for p in posts %}
+        <div class="post-card">
+          <h3>{{ p.titulo }}</h3>
+          <small class="post-data">{{ p.data_criacao }}</small>
+          <p>{{ p.conteudo }}</p>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p><em>Nenhuma postagem criada ainda.</em></p>
+    {% endif %}
+
+    <a href="{{ url_for('logout') }}" class="btn-sair">🔓 Sair do Sistema</a>
+  </div>
+{% endblock %}

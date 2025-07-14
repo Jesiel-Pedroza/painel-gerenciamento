@@ -1,0 +1,12 @@
+[
+  {
+    "titulo": "teste",
+    "conteudo": "Resultado esperado:\r\nCaixa branca com sombras e transparência\r\n\r\nLista de postagens organizada, com datas e conteúdo legíveis\r\n\r\nBotões com cores vivas e hover\r\n\r\nTotalmente compatível com fundo escuro da imagem Python\r\n\r\nSe quiser, também posso aplicar esse estilo na página de criação de postagem (postagem_form.html). Deseja continuar?",
+    "data_criacao": "12/07/2025 15:53"
+  },
+  {
+    "titulo": "teste",
+    "conteudo": ".form-container {\r\n  max-width: 600px;\r\n  margin: 60px auto;\r\n  background-color: rgba(255, 255, 255, 0.95);\r\n  padding: 30px;\r\n  border-radius: 12px;\r\n  box-shadow: 0 0 10px rgba(0,0,0,0.15);\r\n}\r\n\r\n.form-title {\r\n  text-align: center;\r\n  margin-bottom: 20px;\r\n  color: #1f2937;\r\n}\r\n\r\n.form-box label {\r\n  display: block;\r\n  margin-top: 15px;\r\n  margin-bottom: 5px;\r\n  font-weight: bold;\r\n}\r\n\r\n.form-box input,\r\n.form-box textarea {\r\n  width: 100%;\r\n  padding: 10px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 6px;\r\n  box-sizing: border-box;\r\n  font-size: 1rem;\r\n}\r\n\r\n.form-box input:focus,\r\n.form-box textarea:focus {\r\n  border-color: #4f46e5;\r\n  outline: none;\r\n}\r\n\r\n.btn-salvar {\r\n  display: block;\r\n  margin: 25px auto 0;\r\n  background-color: #22c55e;\r\n  color: white;\r\n  font-weight: bold;\r\n  border: none;\r\n  padding: 10px 20px;\r\n  border-radius: 6px;\r\n  cursor: pointer;\r\n  transition: background-color 0.3s;\r\n}\r\n\r\n.btn-salvar:hover {\r\n  background-color: #16a34a;\r\n}\r\n",
+    "data_criacao": "12/07/2025 15:55"
+  }
+]

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Gerenciamento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   
+</head>
+
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}">Início</a>
+        <a href="{{ url_for('listar_usuarios') }}">Usuários</a>
+        <a href="{{ url_for('listar_posts') }}">Postagens</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+   
+
+</body>
+</html>

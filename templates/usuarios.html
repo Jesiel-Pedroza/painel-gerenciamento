@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-usuarios">
+  <div class="box-usuarios">
+    <h2 class="titulo">👤 Lista de Usuários</h2>
+
+    <a href="{{ url_for('novo_usuario') }}" class="btn-novo">+ Novo Usuário</a>
+
+    {% if usuarios %}
+      <ul class="lista-usuarios">
+        {% for u in usuarios %}
+          <li><strong>{{ u.nome }}</strong> <span>- {{ u.email }}</span></li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="vazio">Nenhum usuário cadastrado ainda.</p>
+    {% endif %}
+
+    <a href="{{ url_for('logout') }}" class="btn-sair">🔓 Sair do Sistema</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Painel</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    .login-container {
+      max-width: 350px;
+      margin: 100px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .btn-login {
+      margin-top: 20px;
+      width: 100%;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .btn-login:hover {
+      background: #388E3C;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login no Painel</h2>
+    <form method="POST">
+      <label>Usuário:</label>
+      <input type="text" name="usuario" required>
+      <label>Senha:</label>
+      <input type="password" name="senha" required>
+      <button type="submit" class="btn-login">Entrar</button>
+    </form>
+  </div>
+</body>
+</html>

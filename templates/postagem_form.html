@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-container">
+  <h2 class="form-title">📝 Nova Postagem</h2>
+  <form method="POST" class="form-box">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required placeholder="Digite o título da postagem">
+
+    <label for="conteudo">Conteúdo:</label>
+    <textarea id="conteudo" name="conteudo" rows="6" required placeholder="Digite o conteúdo..."></textarea>
+
+    <button type="submit" class="btn-salvar">Publicar</button>
+  </form>
+</div>
+{% endblock %}
